@@ -38,6 +38,7 @@ public class MorseCode {
             put('X', "-..-");
             put('Y', "-.--");
             put('Z', "--..");
+            put(' ', "  ");
         }};
         input = i;
     }
@@ -49,14 +50,5 @@ public class MorseCode {
                 morseList.add(alphabet.get(c));
         }
         return morseList;
-    }
-
-
-    public static void main(String[] args) {
-        MorseCode m = new MorseCode(" ");
-        ArrayList<String> morse = MorseCode.convertedString();
-        for (int i = 0; i < morse.size(); i++){
-            System.out.println(morse.get(i));
-        }
     }
 }
